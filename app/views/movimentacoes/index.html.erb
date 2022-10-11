@@ -1,0 +1,23 @@
+<div class="w-full">
+  <% if notice.present? %>
+    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+  <% end %>
+
+  <div class="grid grid-cols-4 gap-4 mb-4">
+    <div class="p-6 rounded-lg shadow-lg bg-white">
+      <p>Saldo Atual</p>
+      <p class="text-2xl font-bold">
+        <%= number_to_currency @saldo %>
+      </p>
+    </div>
+
+    <%= link_to new_movimentacao_path,
+                class: "rounded-lg shadow-lg p-6 bg-blue-600 text-white block font-medium text-center" do %>
+      <span>Nova movimentação</span>
+    <% end %>
+  </div>
+
+  <div id="movimentacoes" class="grid grid-cols-1 gap-4 min-w-full">
+    <%= render @movimentacoes %>
+  </div>
+</div>

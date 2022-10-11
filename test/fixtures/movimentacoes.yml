@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data: 2022-09-29
+  descricao: MyString
+  valor: 1
+  tipo: MyString
+
+two:
+  data: 2022-09-29
+  descricao: MyString
+  valor: 1
+  tipo: MyString
