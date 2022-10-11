@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# App-confrole-financeiro
+>>>>>>> e95d2103272a069d1e3e6cf138cc581439f3d6a5
