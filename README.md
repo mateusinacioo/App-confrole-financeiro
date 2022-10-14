@@ -1,28 +1,31 @@
-<<<<<<< HEAD
-# README
+# Projeto de controle financeiro pessoal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto criado para controle financeiro pessoal, adicionando entradas e saídas
 
-Things you may want to cover:
+## Funcionalidades
+1. Autenticação e criação de novo usuário;
+2. Saldo atual;
+3. Receita(entradas);
+4. Nova movimentação (entrada/saída);
 
-* Ruby version
+## Dependências
+* Ruby 3.1.1
+* Rails 7.0.2
+* Postgres
 
-* System dependencies
+## Inicialização
 
-* Configuration
+* `git clone git@github.com:mateusinacioo/App-confrole-financeiro.git `
+* `bundle install`
+* `rake db:create db:migrate`
+* Executar com: `./bin/dev`
+* Abrir no link: `http://localhost:3000/`
 
-* Database creation
+## Status
+* Projeto em andamento e aceito sujestões
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-=======
-# App-confrole-financeiro
->>>>>>> e95d2103272a069d1e3e6cf138cc581439f3d6a5
+## Créditos
+Projeto foi feito atravez do curso feito por Daniel  no canal do youtube [Invenio Tecnologia](https://www.youtube.com/c/InvenioTecnologia)
+* [Aula 01](https://www.youtube.com/watch?v=tn_RVYplxEk)
+* [Aula 02](https://www.youtube.com/watch?v=F8q-W8NO4rU)
+* [Aula 03](https://www.youtube.com/watch?v=nIY2q2u4DkE)
