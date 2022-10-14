@@ -3,11 +3,18 @@
     <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
   <% end %>
 
-  <div class="grid grid-cols-4 gap-4 mb-4">
+  <div class="grid grid-cols-5 gap-5 mb-5">
     <div class="p-6 rounded-lg shadow-lg bg-white">
       <p>Saldo Atual</p>
       <p class="text-2xl font-bold">
         <%= number_to_currency @saldo %>
+      </p>
+    </div>
+
+    <div class="p-6 rounded-lg shadow-lg bg-red-500 text-white block">
+      <p>Total de gasto</p>
+      <p class="text-2xl font-bold text-white block">
+        <%= number_to_currency @saida %>
       </p>
     </div>
 

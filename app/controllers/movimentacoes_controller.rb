@@ -7,6 +7,7 @@ class MovimentacoesController < ApplicationController
     @movimentacoes = collection.order(data: :desc, created_at: :desc)
     @saldo = collection.saldo_atual
     @receita = collection.total_entrada
+    @saida = collection.total_saida
   end
 
   # GET /movimentacoes/new
