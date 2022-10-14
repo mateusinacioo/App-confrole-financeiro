@@ -11,9 +11,15 @@
       </p>
     </div>
 
-    <%= link_to new_movimentacao_path,
+  <%= link_to new_movimentacao_path,
                 class: "rounded-lg shadow-lg p-6 bg-blue-600 text-white block font-medium text-center" do %>
       <span>Nova movimentação</span>
+    <% end %>
+
+    <%= link_to destroy_usuario_session_path,
+                method: :delete,
+                class: "rounded-lg shadow-lg p-6 bg-blue-600 text-white block font-medium text-center" do %>
+      <span>Logado como <%= current_usuario.email %></span>
     <% end %>
   </div>
 

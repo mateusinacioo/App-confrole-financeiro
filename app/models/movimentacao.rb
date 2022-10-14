@@ -1,6 +1,8 @@
 class Movimentacao < ApplicationRecord
     enum :tipo, {saida: 'saida', entrada: 'entrada'}
 
+    belongs_to :usuario
+
     validates :data, comparison: { less_than_or_equal_to: proc { Date.current } }
     validates :descricao, presence: true
     validates :descricao, length: {maximum:150}
@@ -9,15 +11,16 @@ class Movimentacao < ApplicationRecord
     validate :valida_se_existe_saldo
 
     def self.saldo_atual
-        Movimentacao.entrada.sum(:valor) - Movimentacao.saida.sum(:valor)
+        self.entrada.sum(:valor) - self.saida.sum(:valor)
         #self.entrada.sum(:valor) - self.saida.sum(:valor)
     end
 
     private
 
     def valida_se_existe_saldo
+        return unless usuario
         return if entrada?
-        return if valor.to_f <= Movimentacao.saldo_atual
+        return if valor.to_f <= usuario.movimentacoes.saldo_atual
             errors.add :valor, 'não há saldo suficiente'
     end
 end
