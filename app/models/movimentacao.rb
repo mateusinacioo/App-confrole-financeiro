@@ -15,6 +15,10 @@ class Movimentacao < ApplicationRecord
         #self.entrada.sum(:valor) - self.saida.sum(:valor)
     end
 
+    def self.total_entrada
+        self.entrada.sum(:valor)
+    end
+
     private
 
     def valida_se_existe_saldo
