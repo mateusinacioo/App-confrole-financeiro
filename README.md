@@ -16,8 +16,8 @@ Projeto criado para controle financeiro pessoal, adicionando entradas e saídas
 ## Inicialização
 
 * `git clone git@github.com:mateusinacioo/App-confrole-financeiro.git `
-* `bundle install`
 * `cd App-confrole-financeiro/`
+* `bundle install`
 * `rake db:create db:migrate`
 * Executar com: `./bin/dev`
 * Abrir no link: `http://localhost:3000/`
