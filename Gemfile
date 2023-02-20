@@ -70,6 +70,14 @@ group :development do
   # gem "spring"
 end
 
+group :development do
+  gem "pg", "~> 1.1"
+end
+
+group :development do
+  gem "sqlite3"
+end
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
